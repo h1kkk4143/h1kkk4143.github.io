@@ -1,0 +1,363 @@
+<title>澤 輝の売却相談</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@600;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&family=Outfit:wght@500;700&display=swap">
+<style>
+:root{
+  --ground:#F4F6F5;
+  --paper:#FFFFFF;
+  --ink:#172338;
+  --ink-soft:#4A5568;
+  --muted:#7B8794;
+  --line:#DCE2E0;
+  --teal:#2B7A70;
+  --teal-tint:#E4EFEC;
+  --gold:#B08A3E;
+  --hero-bg:#172338;
+  --hero-ink:#F4F6F5;
+  --hero-soft:#AEB9C8;
+  --display:"Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho",serif;
+  --body:"Zen Kaku Gothic New","Hiragino Kaku Gothic ProN","Yu Gothic",system-ui,sans-serif;
+  --num:"Outfit","Helvetica Neue",Arial,sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    color-scheme:dark;
+    --ground:#0F1622;--paper:#16202F;--ink:#E8ECEF;--ink-soft:#B5BFCB;--muted:#8592A2;
+    --line:#26324A;--teal:#5DB5A8;--teal-tint:#18302E;--gold:#D2AE62;
+    --hero-bg:#0A1019;--hero-ink:#F4F6F5;--hero-soft:#9AA6B6;
+  }
+}
+:root[data-theme="dark"]{
+  color-scheme:dark;
+  --ground:#0F1622;--paper:#16202F;--ink:#E8ECEF;--ink-soft:#B5BFCB;--muted:#8592A2;
+  --line:#26324A;--teal:#5DB5A8;--teal-tint:#18302E;--gold:#D2AE62;
+  --hero-bg:#0A1019;--hero-ink:#F4F6F5;--hero-soft:#9AA6B6;
+}
+*{box-sizing:border-box}
+body{background:var(--ground);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.85;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1040px;margin:0 auto;padding-inline:20px}
+h1,h2,h3{text-wrap:balance;margin:0}
+p{margin:0}
+.eyebrow{font-family:var(--num);font-weight:700;font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:var(--teal)}
+
+/* HERO */
+.hero{background:var(--hero-bg);color:var(--hero-ink);overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.25fr .9fr;gap:24px;align-items:end;padding-block:48px 0}
+.hero-copy{padding-bottom:56px;display:grid;gap:22px}
+.hero .eyebrow{color:var(--gold)}
+.hero h1{font-family:var(--display);font-weight:800;font-size:clamp(28px,4.4vw,46px);line-height:1.45;letter-spacing:.02em}
+.hero h1 .dim{color:var(--hero-soft);font-weight:600}
+.hero-lead{color:var(--hero-soft);max-width:34em}
+.nameplate{display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;padding-top:18px;border-top:1px solid rgba(255,255,255,.14)}
+.nameplate strong{font-family:var(--display);font-size:30px;letter-spacing:.2em}
+.nameplate span{font-size:13px;color:var(--hero-soft);letter-spacing:.06em}
+.photo{position:relative;align-self:end;justify-self:center;width:100%;max-width:380px}
+.photo::before{content:"";position:absolute;inset:18% 6% 0 6%;border-radius:50% 50% 0 0;background:var(--teal);opacity:.9}
+.photo img{position:relative;display:block;width:100%;height:auto}
+
+/* SECTIONS */
+section{padding-block:72px}
+.sec-head{display:grid;gap:10px;margin-bottom:36px}
+.sec-head h2{font-family:var(--display);font-weight:800;font-size:clamp(24px,3vw,32px);line-height:1.5}
+
+/* MESSAGE */
+.message .grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start}
+.quote{font-family:var(--display);font-weight:800;font-size:clamp(22px,2.8vw,30px);line-height:1.6}
+.quote em{font-style:normal;color:var(--teal);background:linear-gradient(transparent 70%,var(--teal-tint) 70%)}
+.message-body{display:grid;gap:18px;color:var(--ink-soft)}
+.message-body b{color:var(--ink)}
+.chef{margin-top:4px;padding:18px 20px;background:var(--teal-tint);border-radius:6px;font-size:15px;color:var(--ink)}
+.chef .k{display:block;font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--teal);margin-bottom:4px}
+
+/* SELF */
+.self-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.trait{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:28px 26px;display:grid;gap:14px;align-content:start}
+.trait-k{font-size:13px;font-weight:700;letter-spacing:.14em;color:var(--teal)}
+.trait:nth-child(2) .trait-k{color:var(--gold)}
+.trait-h{font-family:var(--display);font-weight:800;font-size:clamp(20px,2.3vw,24px);line-height:1.55}
+.trait-fact{color:var(--ink-soft);font-size:15px}
+.trait-sale{border-top:1px solid var(--line);padding-top:14px;font-size:15px}
+.trait-sale span{display:block;font-size:12px;font-weight:700;letter-spacing:.1em;color:var(--muted);margin-bottom:4px}
+@media (max-width:760px){.self-grid{grid-template-columns:1fr}}
+
+/* CASES */
+.case-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px}
+.case{background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:28px 26px;display:grid;gap:14px;align-content:start}
+.case-tag{justify-self:start;font-size:12px;font-weight:700;letter-spacing:.08em;color:var(--teal);background:var(--teal-tint);padding:2px 12px;border-radius:999px}
+.case-h{font-family:var(--display);font-weight:800;font-size:clamp(20px,2.3vw,24px);line-height:1.55}
+.case-h em{font-style:normal;color:var(--teal)}
+.case-prop{font-size:13px;color:var(--muted)}
+.case-dl{margin:0;display:grid;gap:4px 0}
+.case-dl dt{font-size:12px;font-weight:700;letter-spacing:.08em;color:var(--muted);margin-top:10px}
+.case-dl dd{margin:0;font-size:15px;color:var(--ink-soft)}
+.case-dl dd b{color:var(--ink)}
+.case-result{margin-top:6px;padding:16px 18px;border-radius:8px;background:var(--hero-bg);color:var(--hero-ink);font-weight:700;font-size:15px;line-height:1.7}
+.case-result span{display:block;font-size:12px;letter-spacing:.12em;color:var(--gold);margin-bottom:2px}
+.case-note{margin-top:20px;font-size:12px;color:var(--muted)}
+@media (max-width:760px){.case-grid{grid-template-columns:1fr}}
+
+/* MISSION */
+.mv{background:var(--hero-bg);color:var(--hero-ink)}
+.mv .eyebrow{color:var(--gold)}
+.mv-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:28px}
+.mv-k{font-family:var(--num);font-weight:700;font-size:14px;letter-spacing:.12em;color:var(--gold);margin-bottom:10px}
+.mv-t{font-family:var(--display);font-weight:800;font-size:clamp(22px,2.6vw,28px);line-height:1.6}
+@media (max-width:760px){.mv-grid{grid-template-columns:1fr;gap:28px}}
+
+/* PROCESS */
+.process{background:var(--paper);border-block:1px solid var(--line)}
+.steps{list-style:none;margin:0;padding:0;display:grid;gap:0;counter-reset:s}
+.steps li{display:grid;grid-template-columns:72px 1fr;gap:20px;padding:24px 0;border-top:1px solid var(--line)}
+.steps li:last-child{border-bottom:1px solid var(--line)}
+.steps .no{font-family:var(--num);font-weight:700;font-size:28px;color:var(--teal);line-height:1.2}
+.steps .no span{display:block;font-size:11px;letter-spacing:.14em;color:var(--muted)}
+.steps h3{font-size:19px;font-weight:700;line-height:1.5;margin-bottom:6px}
+.steps p{color:var(--ink-soft);font-size:15px}
+
+/* CAREER + PROFILE */
+.two{display:grid;grid-template-columns:1.2fr .8fr;gap:48px}
+.timeline{list-style:none;margin:0;padding:0;display:grid}
+.timeline li{display:grid;grid-template-columns:84px 1fr;gap:16px;padding:14px 0;border-top:1px solid var(--line)}
+.timeline .yr{font-family:var(--num);font-weight:700;font-size:18px;color:var(--gold);font-variant-numeric:tabular-nums}
+.timeline li.now .yr{color:var(--teal)}
+.timeline li.now{font-weight:700}
+.profile dl{margin:0;display:grid;grid-template-columns:auto 1fr;gap:10px 18px;font-size:15px}
+.profile dt{color:var(--muted);font-size:13px;padding-top:2px;white-space:nowrap}
+.profile dd{margin:0}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.tag{font-size:13px;padding:3px 10px;border:1px solid var(--line);border-radius:999px;background:var(--paper)}
+.sub-h{font-size:14px;font-weight:700;letter-spacing:.08em;margin-bottom:14px;color:var(--ink)}
+
+/* WHY */
+.why{background:var(--paper);border-top:1px solid var(--line)}
+.why-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:0;border-top:1px solid var(--line)}
+.why-item{padding:26px 24px 26px 0;border-bottom:1px solid var(--line);display:grid;gap:6px}
+.why-item:nth-child(even){padding-left:24px;padding-right:0;border-left:1px solid var(--line)}
+.why-item h3{font-size:18px;font-weight:700}
+.why-item p{color:var(--ink-soft);font-size:15px}
+
+/* CONTACT */
+.contact{background:var(--hero-bg);color:var(--hero-ink)}
+.contact .eyebrow{color:var(--gold)}
+.contact h2{color:var(--hero-ink)}
+.contact-lead{color:var(--hero-soft);max-width:38em;margin-bottom:32px}
+.contact-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+.cbox{border:1px solid rgba(255,255,255,.16);border-radius:8px;padding:20px 22px;display:grid;gap:8px}
+.cbox .k{font-size:12px;letter-spacing:.12em;color:var(--hero-soft)}
+.cbox .v{font-family:var(--num);font-weight:700;font-size:clamp(20px,2.6vw,26px);user-select:all;word-break:break-all}
+.copy{justify-self:start;font:inherit;font-size:13px;color:var(--hero-ink);background:transparent;border:1px solid rgba(255,255,255,.3);border-radius:999px;padding:4px 14px;cursor:pointer}
+.copy:hover{background:rgba(255,255,255,.08)}
+.copy:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.office{margin-top:28px;font-size:13px;color:var(--hero-soft);line-height:1.9}
+.office strong{color:var(--hero-ink);font-size:15px}
+
+@media (max-width:760px){
+  .hero .wrap{grid-template-columns:1fr;padding-top:36px}
+  .hero-copy{padding-bottom:8px}
+  .photo{max-width:280px}
+  .message .grid,.two{grid-template-columns:1fr;gap:32px}
+  .steps li{grid-template-columns:52px 1fr;gap:12px}
+  .why-grid{grid-template-columns:1fr}
+  .why-item,.why-item:nth-child(even){padding:22px 0;border-left:0}
+  .contact-grid{grid-template-columns:1fr}
+  section{padding-block:56px}
+}
+@media (prefers-reduced-motion:no-preference){
+  .copy{transition:background .15s}
+}
+</style>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="eyebrow">TERASS KANSAI ｜ 売却担当エージェント</p>
+      <h1><span class="dim">「売れる価格」ではなく、</span><br>「高く売るための戦略」を<br>ご提案します。</h1>
+      <p class="hero-lead">はじめまして。ご売却を担当させていただく澤 輝です。査定額をお伝えして終わりではなく、市場への見せ方から買主様との交渉まで、お引き渡しの日まで並走します。</p>
+      <div class="nameplate"><strong>澤 輝</strong><span>Hikaru Sawa</span></div>
+    </div>
+    <div class="photo"><img src="sawa.png" alt="澤 輝のプロフィール写真" width="470" height="530"></div>
+  </div>
+</header>
+
+
+<section class="message">
+  <div class="wrap grid">
+    <div class="sec-head">
+      <p class="eyebrow">Message</p>
+      <p class="quote">売却の成否は、<br><em>媒介契約のあと</em>で<br>決まります。</p>
+    </div>
+    <div class="message-body">
+      <p>不動産売却の成功は、査定価格で決まるのではありません。その後の<b>「市場への見せ方」</b>と<b>「買主様との交渉力」</b>で決まります。</p>
+      <p>私はこれまで不動産仲介会社の立ち上げを経て、年平均60件の取引に携わってきました。レインズ（不動産会社間の取引データベース）の成約データに基づいた客観的な分析で、周辺相場から1%でも高く売るための具体策をご提示します。</p>
+      <p>単なる査定書の提出に留まらず、広告戦略や内覧時の演出まで、戦略的に並走することをお約束します。</p>
+      <p class="chef"><span class="k">料理人から不動産へ</span>社会人のスタートは調理師でした。そこで培った「素材の良さを引き出す視点」は、いまは物件の魅力を引き出すことに活きています。</p>
+    </div>
+  </div>
+</section>
+
+<section class="self">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Who I am</p>
+      <h2>私という担当者を、正直にお伝えします</h2>
+    </div>
+    <div class="self-grid">
+      <article class="trait">
+        <p class="trait-k">強み</p>
+        <h3 class="trait-h">慎重すぎるくらい、<br>選択肢を並べてから決める</h3>
+        <p class="trait-fact">たとえば査定価格をお出しするとき、ひとつの査定結果だけで決めることはしません。近隣で実際に売れた価格、いま売りに出ている競合物件、現地で見た建物や周辺の様子を突き合わせ、自分が納得できる根拠がそろってから数字をお伝えします。</p>
+        <div class="trait-sale"><span>ご売却では</span>「仲介で売る」「買取で早く現金化する」「時期をずらす」など、いくつかの出口を並べて比べていただいた上で、お客様にとって最善の方法を一緒に選びます。一つの売り方に決め打ちはしません。</div>
+      </article>
+      <article class="trait">
+        <p class="trait-k">苦手なこと</p>
+        <h3 class="trait-h">話しにくいご事情に、<br>こちらから踏み込むこと</h3>
+        <p class="trait-fact">離婚やご家族のこと、お金のことなど、プライベートな話題を私から根掘り葉掘り聞くのは得意ではありません。「話したくないこともあるだろう」と、つい考えてしまうからです。</p>
+        <div class="trait-sale"><span>裏を返すと</span>質問ひとつでお客様がどんな気持ちになるかを、いつも考えながらお話ししています。ご売却の理由は人それぞれです。話せる範囲で、話せるタイミングでお聞かせいただければ十分です。</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="cases">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Case</p>
+      <h2>これまでの売却事例</h2>
+    </div>
+    <div class="case-grid">
+      <article class="case">
+        <p class="case-tag">なかなか売れなかったお家</p>
+        <h3 class="case-h">半年売れなかった家が、<br>見直して<em>1週間</em>で成約</h3>
+        <p class="case-prop">北摂エリアの戸建</p>
+        <dl class="case-dl">
+          <dt>ご状況</dt><dd>大手不動産会社に売却を任せていましたが、半年たっても買い手が見つかりませんでした。</dd>
+          <dt>原因</dt><dd>最初に依頼したとき、その会社は「うちに任せてもらいたい」という理由で、他社より高い査定額を出していました。相場より高い価格で売り出していたため、買い手の候補から外れていたのです。</dd>
+          <dt>私がしたこと</dt><dd>実際に近くで売れた価格をもとに売り出し価格を見直し、写真や紹介文など、物件の見せ方も整え直しました。</dd>
+        </dl>
+        <p class="case-result"><span>結果</span>見直してから1週間で買い手が見つかり、ご成約。</p>
+      </article>
+      <article class="case">
+        <p class="case-tag">住み替え</p>
+        <h3 class="case-h">新居の完成までに、<br><em>相場どおり</em>の価格で売却</h3>
+        <p class="case-prop">北摂エリアのマンション</p>
+        <dl class="case-dl">
+          <dt>ご状況</dt><dd>注文住宅を建てて住み替える予定で、新居が完成するまでに今のマンションの買い手を見つけたいとのご希望でした。</dd>
+          <dt>心配ごと</dt><dd>新居の完成を待つため、買主様に引き渡せる時期が近くの売り物件より先になります。「引き渡しが遅いと、相場より値下げしないと売れないのでは」という不安がありました。</dd>
+          <dt>私がしたこと</dt><dd>引き渡しまで時間があることを、買主様にとっての<b>ゆとり</b>として伝えました。住宅ローンの銀行選びや、リフォームの内容をじっくり決められる。「急がされずに安心して買える家」として打ち出しました。</dd>
+        </dl>
+        <p class="case-result"><span>結果</span>新居の完成までに買い手が見つかり、相場どおりの価格で売却。売ると買うを同時に進められました。</p>
+      </article>
+    </div>
+    <p class="case-note">※ 実際の事例をもとに、お客様が特定されないよう内容を一部まとめています。結果は物件や市況により異なります。</p>
+  </div>
+</section>
+
+<section class="mv">
+  <div class="wrap">
+    <p class="eyebrow">Mission &amp; Vision ｜ 私の想い</p>
+    <div class="mv-grid">
+      <div><p class="mv-k">Mission</p><p class="mv-t">いい不動産取引を実現し、<br>幸せになれる人をつくる。</p></div>
+      <div><p class="mv-k">Vision</p><p class="mv-t">人生の転機に寄り添い、<br>最良の選択のための伴走者となる。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="process">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">How I sell</p>
+      <h2>ご売却で、私が担うこと</h2>
+    </div>
+    <ol class="steps">
+      <li><div class="no"><span>STEP</span>1</div><div><h3>根拠のある価格設定</h3><p>近隣の成約データをもとに「いくらで売れたか」の事実から価格をご提案します。高すぎる査定で期待だけを膨らませることはしません。</p></div></li>
+      <li><div class="no"><span>STEP</span>2</div><div><h3>市場への見せ方をつくる</h3><p>写真・掲載文・広告の出し方まで、買主様の目に留まる順番で設計します。</p></div></li>
+      <li><div class="no"><span>STEP</span>3</div><div><h3>内覧で魅力を伝える</h3><p>見学時の動線や見せ方を事前にご相談し、住んだ後の暮らしが想像できる内覧にします。</p></div></li>
+      <li><div class="no"><span>STEP</span>4</div><div><h3>買主様との交渉</h3><p>価格交渉や条件調整は、売主様の目的（価格優先か、時期優先か）に沿って進めます。</p></div></li>
+      <li><div class="no"><span>STEP</span>5</div><div><h3>活動をすべて見える化</h3><p>Terass Portal で、物件の閲覧状況や反響をいつでもご確認いただけます。定期的な活動報告もお届けします。</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section class="career">
+  <div class="wrap two">
+    <div>
+      <div class="sec-head">
+        <p class="eyebrow">Career</p>
+        <h2>経歴</h2>
+      </div>
+      <ol class="timeline">
+        <li><span class="yr">2010</span><span>飲食店で調理師として新卒入社</span></li>
+        <li><span class="yr">2013</span><span>賃貸不動産の営業として年間250件契約。2店舗の立ち上げ</span></li>
+        <li><span class="yr">2017</span><span>売買仲介営業を経験し、売却領域で表彰受賞</span></li>
+        <li><span class="yr">2022</span><span>不動産仲介会社の立ち上げ、年平均60件の取引</span></li>
+        <li class="now"><span class="yr">2025</span><span>TERASS に参画（TERASS KANSAI）</span></li>
+      </ol>
+    </div>
+    <div class="profile">
+      <div class="sec-head">
+        <p class="eyebrow">Profile</p>
+        <h2>プロフィール</h2>
+      </div>
+      <dl>
+        <dt>年齢</dt><dd>40歳（1986年生まれ）</dd>
+        <dt>出身</dt><dd>大阪府岸和田市</dd>
+        <dt>学歴</dt><dd>甲南大学 法学部 卒業</dd>
+        <dt>家族</dt><dd>妻・長男(8)・長女(5)・次女(2)</dd>
+        <dt>好きなこと</dt><dd>家族旅行の計画を立てること</dd>
+        <dt>得意な不動産</dt>
+        <dd><div class="tags"><span class="tag">戸建</span><span class="tag">マンション</span><span class="tag">収益不動産</span></div></dd>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section class="why">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Why TERASS</p>
+      <h2>TERASSで売却をお任せいただく理由</h2>
+    </div>
+    <div class="why-grid">
+      <div class="why-item"><h3>担当者一貫制</h3><p>エージェントは個人事業主のため、転職や店舗異動がありません。ご相談からお引き渡し後まで、私が担当します。</p></div>
+      <div class="why-item"><h3>ノルマのない、お客様第一</h3><p>「売らなければならない物件」や営業ノルマがありません。良くないことも、はっきりお伝えします。</p></div>
+      <div class="why-item"><h3>活動の透明性</h3><p>Terass Portal で、集客状況・閲覧状況・反響をリアルタイムに確認できます。「任せたら何も見えない」をなくします。</p></div>
+      <div class="why-item"><h3>全国800名のネットワーク</h3><p>平均選考通過率5%の基準をクリアしたエージェントが全国に在籍。買主様の情報も広く集まります。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Contact</p>
+      <h2>まずは、お気軽にご相談ください</h2>
+    </div>
+    <p class="contact-lead">「今売るといくらになるのか知りたい」「住み替えの順番に迷っている」「相続した家をどうするか決めていない」――売ると決まっていない段階のご相談も歓迎です。</p>
+    <div class="contact-grid">
+      <div class="cbox">
+        <span class="k">電話（澤 直通）</span>
+        <span class="v" id="tel">080-9280-7674</span>
+        <button class="copy" type="button" data-copy="tel">番号をコピー</button>
+      </div>
+      <div class="cbox">
+        <span class="k">メール（澤 直通）</span>
+        <span class="v" id="mail">hikaru.sawa@terass.com</span>
+        <button class="copy" type="button" data-copy="mail">アドレスをコピー</button>
+      </div>
+    </div>
+    <p class="office"><strong>TERASS KANSAI</strong><br>大阪府大阪市北区茶屋町16番1号 H¹O梅田茶屋町8階<br>株式会社TERASS ／ 国土交通大臣免許(1)第010125号</p>
+  </div>
+</section>
+
+<script>
+document.querySelectorAll('.copy').forEach(function(btn){
+  btn.addEventListener('click',function(){
+    var el=document.getElementById(btn.dataset.copy);
+    var label=btn.textContent;
+    function done(){btn.textContent='コピーしました';setTimeout(function(){btn.textContent=label},1600)}
+    function fallback(){var r=document.createRange();r.selectNodeContents(el);var s=getSelection();s.removeAllRanges();s.addRange(r);btn.textContent='選択しました'}
+    try{navigator.clipboard.writeText(el.textContent.trim()).then(done,fallback)}catch(e){fallback()}
+  });
+});
+</script>
